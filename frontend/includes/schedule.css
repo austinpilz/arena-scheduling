@@ -1,0 +1,112 @@
+/*body { font: 12px Tahoma, Geneva, sans-serif; } */
+
+/* panel */
+
+.panel, .panelcollapsed 
+{
+	background: #eee;
+	margin: 5px;
+	padding: 0px 0px 5px;
+	
+	border: 1px solid #999;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+/* panel heading */
+.panel h2, .panelcollapsed h2 
+{
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 4px;
+	background: #CCC url(arrow-up.gif) no-repeat right;
+	border-bottom: 1px solid #999;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-top: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+}
+
+/* panel heading on rollover */
+.panel h2:hover, .panelcollapsed h2:hover { background-color: #A9BCEF; }
+
+.panel li
+{
+	float:center;
+}
+
+/* heading of a collapsed panel */
+.panelcollapsed h2 
+{
+	background: #CCC url(arrow-dn.gif) no-repeat right;
+	border-color: #CCC;
+}
+
+/* panel content - do not set borders or paddings */
+.panelcontent 
+{ 
+	background: #EEE; 
+	overflow: hidden;
+	text-align:inherit;
+}
+
+.clean-gray{
+border:solid 1px #DEDEDE; 
+background:#EFEFEF;
+color:#222222;
+padding:4px;
+text-align:center;
+}
+.clean-ok{
+border:solid 1px #090; 
+background:#3F3;
+color:#060;
+padding:4px;
+text-align:center;
+}
+.clean-error{
+border:solid 1px #DEDEDE; 
+background:#EFEFEF;
+color:#222222;
+padding:4px;
+text-align:center;
+}
+.element label {
+    float:center; 
+    width:75px;
+    font-weight:700
+}
+.element input.text {
+    
+    width:270px;
+    padding-left:20px;
+}
+.element .textarea {
+    height:120px; 
+    width:270px;
+    padding-left:20px;
+}
+.element .hightlight {
+    border:2px solid #9F1319;
+   
+}
+.element #submit {
+    
+    margin-right:10px;
+}
+.loading {
+   
+    background:url(ajax-loader.gif) no-repeat 1px; 
+    height:28px; 
+    width:28px; 
+    display:none;
+}
+.done {display:none}
+.tryagain {display:none}
+.success {display:none}
+
+/* collapsed panel content */
+.panelcollapsed .panelcontent { display: none; }
+.unexpected_error { display: none; }
